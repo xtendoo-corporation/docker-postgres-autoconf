@@ -1,5 +1,5 @@
 ARG BASE_TAG
-FROM docker.io/postgres:${BASE_TAG}
+FROM postgis/postgis:${BASE_TAG}-3.1
 ENTRYPOINT [ "/autoconf-entrypoint" ]
 CMD []
 ENV CERTS="{}" \
